@@ -14,11 +14,12 @@
 
 /* CSS Variables */
 :root{
-    --primary-color: #335eea;
-    --link-color: #506690;
-    --btn-hover-color: #2b50c7;
+    --primary-color: #EB5E28;
+    --link-color: #403D39;
+    --btn-hover-color: #252422;
     --lg-heading: #161c2d;
-    --text-content: #869ab8;
+    --text-content: #CCC5B9;
+    --bg-color: #FFFCF2;
     --fixed-header-height: 1.5rem;
 }
 
@@ -36,11 +37,11 @@ html {
     position: fixed;
     bottom: 30px;
     right: 42px; 
-    background-color: #fff;
+    background-color: var(--bg-color);
     float: right;
     cursor: pointer;
     border-radius: 15rem;
-    z-index: inherit;
+    z-index: 10000;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -58,7 +59,7 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #fafbfb;
+    background-color: var(--bg-color);
 }
 
 ul li {
@@ -183,7 +184,7 @@ button{
     margin-top: 1.5rem;
     font-size: 19px;
     line-height: 28px;
-    color: #334157;
+    color: var(--btn-hover-color);
 }
 
 .btn_wrapper{
@@ -235,15 +236,16 @@ button{
     width: 150px;
     height: 55px;
     font-size: 16px;
-    color: #fff;
+    color: var(--btn-hover-color);
     letter-spacing: 0;
-    background-color: #e1e7fc;
-    color: #0e2a86;
+    background-color: var(--text-content);
+    color: var(--lg-heading);
     box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
 }
 
 .documentation_btn:hover{
-    background-color: #d7ddf1;
+    background-color: var(--btn-hover-color);
+    color: #fff;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
@@ -286,7 +288,7 @@ button{
 .icon svg{
     width: 30px;
     height: 30px;
-    color: #6b85d8;
+    color: var(--primary-color);
 }
 
 .feature_info{
