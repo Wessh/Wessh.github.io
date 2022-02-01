@@ -315,8 +315,11 @@ button{
 footer{
     width: 100%;
     background-color: var(--primary-color);
-    height: 12px;
+    height: 20px;
     margin-top: 8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */
@@ -325,7 +328,8 @@ footer{
         display: none;
     }
     .nav_menu{
-        display: block;
+        /*display: block;*/
+        display: none;
     }
 }
 
