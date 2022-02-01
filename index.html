@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <title>Cover Template · Bootstrap v5.0</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="cover.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wesley's Landing Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+    <!-- Icons _CDN_ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <head class="container header">
+        <!-- Navbar -->
+        <nav class="nav">
+            <div class="logo">
+                <h2>Github</h2>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <button class="close_btn" id="close_btn">
+                    <i class="ri-close-fill"></i>
+                </button>
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Home</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Projects</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">About</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#" class="nav_menu_link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="toggle_btn" id="toggle_btn">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
     </head>
-    <body class="d-flex h-100 text-center text-white bg-dark">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="mb-auto">
-                <div>
-                    <h3 class="float-md-start mb-0">Github</h3>
-                    <nav class="nav nav-masthead justify-content-center float-md-end">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#" hidden>Features</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </nav>
+    <section class="wrapper">
+        <div class="container">
+            <div class="grid-col-2">
+                <div class="grid-item-1">
+                    <div class="grid-item-1">
+                        <h1 class="main-heading">
+                            Weslcome to <span>Wessh's landing page</span>
+                            <br/>
+                            Develop anything.
+                        </h1>
+                        <p class="info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="btn_wrapper">
+                            <button class="btn view_more_btn">
+                                View all pages <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </header>
-            <main class="px-3">
-                <h1>Bem vindo</h1>
-                <p class="lead">Essa será minha pagina de apresentação do github!</p>
-                <p class="lead"> <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white" hidden>Learn more</a> </p>
-            </main>
-            <footer class="mt-auto text-white-50">
-</footer>
+            </div>
         </div>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+    </section>
+    <!-- Scripts -->
+    <script src="assets/js/custom.js"></script>
+</body>
 </html>
