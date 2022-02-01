@@ -1,5 +1,3 @@
-//Aditional content
-//https://desenvolvimentoparaweb.com/css/navegacao-ancora-smooth-scroll-css-puro/
 //Reference studing project
 //https://www.youtube.com/watch?v=RdCJmh_Hi5k
 const navId = document.getElementById("nav_menu");
@@ -15,6 +13,13 @@ ToggleMenuId.addEventListener("click", () => {
 CloseBtnId.addEventListener("click", () => {
     navId.classList.remove("show");
 });
+
+//ScrollTop
+window.addEventListener('scroll', () => {
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 200)
+});
+
 
 //Scroll initalize
 AOS.init();
